@@ -9,7 +9,6 @@ A stunning, interactive landing page for Spylt beverage company built with React
 - [Deployment](#deployment)
 - [Test and Admin Users Credentials](#test-and-admin-users-credentials)
 - [How to Use App for Regular User](#how-to-use-app-for-regular-user)
-- [How to Use App for Admin User](#how-to-use-app-for-admin-user)
 - [Project Structure](#project-structure)
 - [Installation](#installation)
 - [Development](#development)
@@ -93,7 +92,7 @@ A stunning, interactive landing page for Spylt beverage company built with React
 
 ### Live Application
 
-🚀 **APP URL**: [Your Live URL Here]
+🚀 **APP URL**: [https://spylt-bev-co-react-gsap-tcss-ts.netlify.app/]
 
 ### Deployment Platforms
 
@@ -137,23 +136,7 @@ dist/
 
 ## Test and Admin Users Credentials
 
-> **Note**: This is a static landing page without authentication. No login credentials are required.
-
-### Regular User Access
-- **Access Level**: Public
-- **Authentication**: None required
-- **Permissions**: View all content, interact with videos and animations
-
-### Admin User Access
-- **Access Level**: Not applicable
-- **Authentication**: Not implemented
-- **Permissions**: N/A
-
-*For a production application with user management, implement authentication using services like:*
-- Firebase Authentication
-- Auth0
-- Azure AD B2C
-- Custom JWT-based auth
+> **Note**: There is no user management system in this App.
 
 ---
 
@@ -210,53 +193,6 @@ dist/
 - **Video Interaction**: Tap testimonial cards to play (auto-pause on scroll)
 - **Responsive Layout**: Optimized for all screen sizes
 - **Performance**: Optimized video loading for mobile networks
-
----
-
-## How to Use App for Admin User
-
-> **Note**: This is a static landing page without an admin panel. Content management requires direct code/file updates.
-
-### Content Management
-
-To update content as an administrator/developer:
-
-1. **Update Flavors**
-   - Edit `src/constants/index.ts`
-   - Modify the `flavorlists` array
-   - Update images in `public/images/`
-
-2. **Update Nutrition Data**
-   - Edit `src/constants/index.ts`
-   - Modify the `nutrientLists` array
-
-3. **Update Testimonials**
-   - Edit `src/constants/index.ts`
-   - Modify the `cards` array
-   - Add/replace videos in `public/videos/`
-
-4. **Update Videos**
-   - Replace video files in `public/videos/`
-   - Supported formats: MP4 (recommended)
-   - Keep similar aspect ratios for best results
-
-5. **Update Styling**
-   - Edit component files in `src/sections/` and `src/components/`
-   - Modify Tailwind classes for design changes
-   - Update `tailwind.config.js` for theme customization
-
-6. **Deploy Changes**
-   ```bash
-   npm run build
-   # Deploy dist/ folder to your hosting platform
-   ```
-
-### Future Admin Panel Considerations
-
-For a full CMS admin panel, consider integrating:
-- **Headless CMS**: Sanity, Contentful, Strapi
-- **Static Site CMS**: NetlifyCMS, TinaCMS
-- **Custom Admin Dashboard**: React Admin, Refine
 
 ---
 
@@ -317,7 +253,7 @@ spylt_bev_co/
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/tauseefiqbal/spylt_bev_co-react-gsap-tcss-ts.git
    cd spylt_bev_co
    ```
 
